@@ -27,8 +27,8 @@ driver.manage().window().maximize();
 
 		driver.get("https://gwre-devexp-ci-production-devci.gwre-devops.net/login.html");
 		driver.manage().window().setSize(new Dimension(1130, 492));
-		driver.findElement(By.id("username")).sendKeys("afeijoo");
-		driver.findElement(By.id("password")).sendKeys("1237894guidewire@");
+		driver.findElement(By.id("username")).sendKeys("usuario");
+		driver.findElement(By.id("password")).sendKeys("contrasena");
 		driver.findElement(By.id("password")).sendKeys(Keys.ENTER);
 		try {
 			Thread.sleep(8000);
@@ -38,7 +38,7 @@ driver.manage().window().maximize();
 		}
 		WebElement textDemo = driver.findElement(By.xpath("//*[text()='AU 177']"));
 		textDemo.click();
-		//Debería hacer un getURL() porque tengo que volver aca
+		//DeberÃ­a hacer un getURL() porque tengo que volver aca
 		textDemo = driver.findElement(By.xpath("//*[text()='package-sbt']"));
 		textDemo.click();
 		WebElement lastBuildPackageSbt=driver.findElement(By.xpath("/html/body/div[1]/div[6]/div/div/div/div/div[2]/div[2]/div[10]/table/tbody/tr/td[2]/span/span/span/div/a/span/span/span[1]"));
