@@ -42,7 +42,7 @@ public class Prueba1Test{
 	    driver.get("https://gwre-devexp-ci-production-devci.gwre-devops.net/login.html");
 	    driver.manage().window().setSize(new Dimension(1130, 492));
 	    driver.findElement(By.id("username")).sendKeys("afeijoo");
-	    driver.findElement(By.id("password")).sendKeys("1237894guidewire@");
+	    driver.findElement(By.id("password")).sendKeys("");
 	    driver.findElement(By.id("password")).sendKeys(Keys.ENTER);
   }
 }
